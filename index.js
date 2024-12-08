@@ -40,7 +40,7 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
-console.log("Induwa-MD Bot Connecting...");
+console.log("Hashan-MD Bot Connecting...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -138,7 +138,7 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
 
 if(senderNumber.includes("94701814946")){
 if(isReact) return 
-m.react("🧑‍💻")
+m.react("☀")
 }
         
 //====≠=============================================         
@@ -184,7 +184,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("hey user,Induwa-MD Bot started ✅");
+res.send("hey user,Hashan-MD Bot started ✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
